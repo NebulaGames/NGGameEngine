@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<texturefile>
+  <id>b3240b9c-d00b-4a3e-9b7b-712ddbcfc2a5</id>
+  <name>Basic Effects</name>
+  <author>Mark Alicz</author>
+  <description>Basic Textures</description>
+  <date>10/3/2014</date>
+  <textures>
+    <texture>
+      <id>cdecd4ab-526b-48fg-9873-0577f6e6ee54</id>
+      <name>GrassTile</name>
+      <filename>GrassTile.jpg</filename>
+      <description>Basic Grass Tile</description>
+      <displayname>Green Grass</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup>animationa</animationgroup>
+      <animationdisplaytime>2000</animationdisplaytime>
+    </texture>
+    <texture>
+      <id>cf94428a-b770-48f9-b6c3-b0fbf9ata0eb</id>
+      <name>MetalScratches</name>
+      <filename>MetalScratches.jpg</filename>
+      <description>Metal Scratches</description>
+      <displayname>Metal Scratches</displayname>
+      <animationseq>1</animationseq>
+      <animationgroup>animationa</animationgroup>
+      <animationdisplaytime>2000</animationdisplaytime>
+    </texture>
+  </textures>
+</texturefile>

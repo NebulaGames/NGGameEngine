@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>51a5c62b-0f6b-4211-826d-9997b49b5c85</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ConfigurationProject</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Data\Games\DogMania\Images\MainImage.pdn" />
+    <None Include="$(MSBuildThisFileDirectory)SDL2.dll" />
+    <None Include="$(MSBuildThisFileDirectory)soft_oal.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Data\Actors\Peon\info.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Actors\Peon\Peon.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\GameData.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Games\DogMania\Images\Husky.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Games\DogMania\Images\Pitbull.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Games\DogMania\Images\Shepherd.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Games\DogMania\Images\ShepherdBlack.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Games\DogMania\Images\ShepherdWhite.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Games\DogMania\Images\WildCard.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Games\DogMania\Positions.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Images\Icons\PaintBrush.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Images\Icons\Select.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\Basic\GrassTile.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\Basic\info.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\Basic\MetalScratches.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\ground0001.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\ground0002.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\ground0003.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\ground0004.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\ground0005.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\ground0006.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\ground0007.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\ground0008.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\ground0009.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\ground0011.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\ground0012.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\ground0013.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Textures\GroundEffects\info.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Objects\BasicOutdoor\info.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Objects\BasicOutdoor\Tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Data\Images\System\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Data\Performance\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Data\Plugins\" />
+  </ItemGroup>
+</Project>

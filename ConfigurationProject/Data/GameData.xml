@@ -1,0 +1,25 @@
+﻿<gameconfiguration initialgame="DogMania">
+  <plugins>
+    <plugin name="Nebula Games Plugins" sourcename="NGPlugins" enabled="true" order="1">
+      <pluginobjects>
+        <pluginobject name="NGHelperLibrary" fullnamespace="NebulaGames.RPGWorld.Plugins.NGHelperLibrary"></pluginobject>
+        <pluginobject name="NGPerformanceMonitor" fullnamespace="NebulaGames.RPGWorld.Plugins.NGPerformanceMonitor"></pluginobject>
+      </pluginobjects>
+    </plugin>
+  </plugins>
+  <videoconfiguration>
+    <resolution value="1024,768"></resolution>
+    <fullscreen value="false"></fullscreen>
+  </videoconfiguration>
+  <textures>
+    <directories>
+      <directory subfolders="true" sourcename="HighResImages" relativepath="" absolutepath="c:\test\testimages" />
+    </directories>
+    <advanced>
+      <cachesize value="4096,4096"></cachesize>
+    </advanced>
+  </textures>
+  <games>
+    <game name="DogMania" sourcename="DogMania" enabled="true"></game>
+  </games>
+</gameconfiguration>

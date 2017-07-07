@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60E9F617-54F2-402B-9F84-50DE1939F3AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NebulaGames.RPGWorld</RootNamespace>
+    <AssemblyName>RPGWorldEngineDLL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ACT.Core">
+      <HintPath>D:\ACT\Binarys\ACT.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=2.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\GamersGatherOnline\Generic Game Engine\NG_GameProjectManager\NG_SpriteBuilder\SpriteBuilder\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.6.0.1625, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Net, Version=3.6.0.1625, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\ACT\Binarys\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\ActorData.cs" />
+    <Compile Include="Assets\Images.cs" />
+    <Compile Include="Assets\ObjectInfo.cs" />
+    <Compile Include="Assets\PackageInfo.cs" />
+    <Compile Include="Assets\TextureInfo.cs" />
+    <Compile Include="Attributes\NGAttributes.cs" />
+    <Compile Include="BaseClasses\NGAnimation_Base.cs" />
+    <Compile Include="BaseClasses\NGDataLogger_Base.cs" />
+    <Compile Include="BaseClasses\NGWindow_Base.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="CurrentCore.cs" />
+    <Compile Include="Data\GameConfiguration\NGGameConfigGames.cs" />
+    <Compile Include="Data\GameConfiguration\NGGameConfigPlugins.cs" />
+    <Compile Include="Data\GameConfiguration\NGGameConfigTextures.cs" />
+    <Compile Include="Data\GameConfiguration\NGGameConfiguration.cs" />
+    <Compile Include="Data\GameConfiguration\NGGameConfigVideoConfiguration.cs" />
+    <Compile Include="Data\Animation\NGAnimation.cs" />
+    <Compile Include="Data\Animation\NGAnimationFrame.cs" />
+    <Compile Include="Data\Animation\NGAnimationFrames.cs" />
+    <Compile Include="Data\Animation\NGAnimations.cs" />
+    <Compile Include="Data\NGImage.cs" />
+    <Compile Include="Data\NGImages.cs" />
+    <Compile Include="Data\NGPluginConfig.cs" />
+    <Compile Include="Data\NGWindow.cs" />
+    <Compile Include="Data\NGWindowAnimation.cs" />
+    <Compile Include="Data\NGWindowAnimations.cs" />
+    <Compile Include="Data\NGWindowImage.cs" />
+    <Compile Include="Data\NGWindowImages.cs" />
+    <Compile Include="Data\NGWindows.cs" />
+    <Compile Include="Data\Plugins\NGPluginMetaData.cs" />
+    <Compile Include="Data\Textures\NGTexture.cs" />
+    <Compile Include="Data\Textures\NGTextureFile.cs" />
+    <Compile Include="Data\Textures\NGTextureManager.cs" />
+    <Compile Include="Data\Textures\NGTextures.cs" />
+    <Compile Include="Enumerations\AnimationModeEnum.cs" />
+    <Compile Include="Enumerations\EnumerationHelper.cs" />
+    <Compile Include="Enumerations\ErrorLogLevels.cs" />
+    <Compile Include="Enumerations\GameLoadingStatuses.cs" />
+    <Compile Include="Enumerations\IDE_Enums.cs" />
+    <Compile Include="Enumerations\RPGGame\Enum_SkillScopes.cs" />
+    <Compile Include="Enumerations\RPGGame\Enum_SkillTypes.cs" />
+    <Compile Include="Enumerations\SpriteBatchPurpose.cs" />
+    <Compile Include="Enumerations\SystemTypesEnum.cs" />
+    <Compile Include="Enumerations\VideoEnums.cs" />
+    <Compile Include="GameBuilder\Constants.cs" />
+    <Compile Include="GameBuilder\EditorAnimationFrame.cs" />
+    <Compile Include="GameBuilder\EditorScreen.cs" />
+    <Compile Include="GameBuilder\EditorWorld.cs" />
+    <Compile Include="GameBuilder\LayerInfo.cs" />
+    <Compile Include="GameBuilder\MapObject.cs" />
+    <Compile Include="GameBuilder\PackageObject.cs" />
+    <Compile Include="GameData.cs" />
+    <Compile Include="GameImageManager.cs" />
+    <Compile Include="GameImageManager_Optimization.cs" />
+    <Compile Include="Graphics\CompressibleImage.cs" />
+    <Compile Include="Graphics\FastPixel.cs" />
+    <Compile Include="Graphics\ImageMethods.cs" />
+    <Compile Include="Graphics\ResourceManager.cs" />
+    <Compile Include="Graphics\SpriteParserDefinition.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Helper\Delegates.cs" />
+    <Compile Include="Helper\ErrorLogable.cs" />
+    <Compile Include="Helper\SpriteBuilder.cs" />
+    <Compile Include="Interfaces\I_NGAnimatable.cs" />
+    <Compile Include="Interfaces\I_NGDataLogger.cs" />
+    <Compile Include="Interfaces\I_NGGame.cs" />
+    <Compile Include="Interfaces\I_NGGeneric.cs" />
+    <Compile Include="Interfaces\I_NGPlugin.cs" />
+    <Compile Include="Interfaces\I_NGWindow.cs" />
+    <Compile Include="Interfaces\I_NGWindowObject.cs" />
+    <Compile Include="Interfaces\RPGGame\I_Actor.cs" />
+    <Compile Include="Interfaces\RPGGame\I_Class.cs" />
+    <Compile Include="Interfaces\RPGGame\I_Skill.cs" />
+    <Compile Include="MonoGame\Actors\Actor.cs" />
+    <Compile Include="MonoGame\Actors\Dynamic\Crocy.cs" />
+    <Compile Include="MonoGame\Actors\Dynamic\Peon.cs" />
+    <Compile Include="MonoGame\Animation\Animation.cs" />
+    <Compile Include="MonoGame\Animation\AnimationEngine.cs" />
+    <Compile Include="MonoGame\Animation\AnimationFrame.cs" />
+    <Compile Include="MonoGame\Camera.cs" />
+    <Compile Include="MonoGame\Content\ContentBuilder.cs" />
+    <Compile Include="MonoGame\Drawing\MonoGame2D.cs" />
+    <Compile Include="MonoGame\Managers\ActorManager.cs" />
+    <Compile Include="MonoGame\Managers\AnimationManager.cs" />
+    <Compile Include="MonoGame\Managers\CodeManager.cs" />
+    <Compile Include="MonoGame\Managers\EdgeManager.cs" />
+    <Compile Include="MonoGame\Managers\FontManager.cs" />
+    <Compile Include="MonoGame\Managers\MouseManager.cs" />
+    <Compile Include="MonoGame\Managers\ScreenManager.cs" />
+    <Compile Include="MonoGame\Managers\SettingsManager.cs" />
+    <Compile Include="MonoGame\Managers\SoundManager.cs" />
+    <Compile Include="MonoGame\Managers\TextureManager.cs" />
+    <Compile Include="MonoGame\Managers\WindowManager.cs" />
+    <Compile Include="MonoGame\MapObject.cs" />
+    <Compile Include="MonoGame\Math\Math.cs" />
+    <Compile Include="MonoGame\MonoGameExtensions.cs" />
+    <Compile Include="MonoGame\Screen.cs" />
+    <Compile Include="MonoGame\Windows\Button.cs" />
+    <Compile Include="MonoGame\Windows\DrawableWindowComponent.cs" />
+    <Compile Include="MonoGame\Windows\DynamicTest\FPS.cs" />
+    <Compile Include="MonoGame\Windows\Window.cs" />
+    <Compile Include="MonoGame\World.cs" />
+    <Compile Include="Performance\TexturePacker.cs" />
+    <Compile Include="PluginManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structs\CoreObject.cs" />
+    <Compile Include="Structs\DataPacket.cs" />
+    <Compile Include="Structs\NGSortedObjectsCollection.cs" />
+    <Compile Include="Structs\PluginMetaData.cs" />
+    <Compile Include="Structs\StaticTextureData.cs" />
+    <Compile Include="Structs\TextData.cs" />
+    <Compile Include="Structs\VersionInfo.cs" />
+    <Compile Include="TextureData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Plugins\PluginTemplate.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

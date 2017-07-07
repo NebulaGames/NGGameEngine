@@ -1,0 +1,10 @@
+﻿CustomIntroWindow
+~~~END~~~
+CustomIntroWindowClass=I_NGWindow,CustomIntroWindowPluginClass=I_NGPlugin
+~~~END~~~
+Mark Alicz
+~~~END~~~
+This is the header of the file.
+
+This has the HELP you willneed to get started.
+~~~END~~~

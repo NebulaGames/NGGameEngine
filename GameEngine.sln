@@ -3,7 +3,42 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPGWorldIDE", "RPGWorldIDE\RPGWorldIDE.csproj", "{F63CD560-7A7B-46E4-AF02-C5F64F643489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPGWorldEngineDLL", "RPGWorldEngineDLL\RPGWorldEngineDLL.csproj", "{60E9F617-54F2-402B-9F84-50DE1939F3AD}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ConfigurationProject", "ConfigurationProject\ConfigurationProject.shproj", "{51A5C62B-0F6B-4211-826D-9997B49B5C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPGWorldBasePlugins", "RPGWorldBasePlugins\RPGWorldBasePlugins.csproj", "{519B91DD-CC40-41E6-A49B-73D5590321A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{72340FAB-890A-407A-A9DB-87BCF4C8ACCC}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ConfigurationProject\ConfigurationProject.projitems*{51a5c62b-0f6b-4211-826d-9997b49b5c85}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F63CD560-7A7B-46E4-AF02-C5F64F643489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F63CD560-7A7B-46E4-AF02-C5F64F643489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F63CD560-7A7B-46E4-AF02-C5F64F643489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F63CD560-7A7B-46E4-AF02-C5F64F643489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60E9F617-54F2-402B-9F84-50DE1939F3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E9F617-54F2-402B-9F84-50DE1939F3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E9F617-54F2-402B-9F84-50DE1939F3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E9F617-54F2-402B-9F84-50DE1939F3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{519B91DD-CC40-41E6-A49B-73D5590321A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{519B91DD-CC40-41E6-A49B-73D5590321A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{519B91DD-CC40-41E6-A49B-73D5590321A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{519B91DD-CC40-41E6-A49B-73D5590321A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72340FAB-890A-407A-A9DB-87BCF4C8ACCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72340FAB-890A-407A-A9DB-87BCF4C8ACCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72340FAB-890A-407A-A9DB-87BCF4C8ACCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72340FAB-890A-407A-A9DB-87BCF4C8ACCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

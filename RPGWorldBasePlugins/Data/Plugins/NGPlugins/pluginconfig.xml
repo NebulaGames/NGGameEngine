@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pluginconfig compiled="false">
+  <images>
+    <image id="CustomIntroWindow_TitleImage" scope="public" file="TitleImage.png" ></image>
+    <image id="CustomIntroWindow_IntroA" scope="public" storage="CustomIntroWindow_Animations" file="IntroA.png" ></image>
+    <image id="CustomIntroWindow_IntroB" scope="public" storage="CustomIntroWindow_Animations" file="IntroB.png" ></image>
+    <image id="CustomIntroWindow_IntroC" scope="public" storage="CustomIntroWindow_Animations" file="IntroC.png" ></image>
+    <image id="CustomIntroWindow_IntroD" scope="public" storage="CustomIntroWindow_Animations" file="IntroD.png" ></image>
+    <image id="CustomIntroWindow_IntroE" scope="public" storage="CustomIntroWindow_Animations" file="IntroE.png" ></image>
+    <image id="CustomIntroWindow_IntroF" scope="public" storage="CustomIntroWindow_Animations" file="IntroF.png" ></image>
+  </images>
+  <animations>
+    <animation id="LogoAnimation" scope="private">
+      <frames animationmode="reverse">
+        <frame imageid="CustomIntroWindow_IntroA" index="1" offset="-10,-5" delay="100"></frame>
+        <frame imageid="CustomIntroWindow_IntroB" index="2" offset="-10,-5"></frame>
+        <frame imageid="CustomIntroWindow_IntroC" index="3" offset="-10,-5"></frame>
+        <frame imageid="CustomIntroWindow_IntroD" index="4" offset="-10,-5"></frame>
+        <frame imageid="CustomIntroWindow_IntroE" index="5" offset="-10,-5"></frame>
+        <frame imageid="CustomIntroWindow_IntroF" index="6" offset="-10,-5"></frame>
+      </frames>
+    </animation>
+    <animation id="LogoAnimationQuick" scope="public">
+      <frames animationmode="reverse">
+        <frame imageid="CustomIntroWindow_IntroC" index="1" offset="-10,-5"></frame>
+        <frame imageid="CustomIntroWindow_IntroD" index="2" offset="-10,-5"></frame>
+      </frames>
+    </animation>
+  </animations>
+  <windows>
+    <window x="CENTER" y="CENTER" width="600" height="400" backgroundcolor="0,0,255" bordersize="2" bordercolor="255,255,0" backimage="CustomIntroWindow_TitleImage">
+      <images>
+        <image imageid="CustomIntroWindow_IntroA" destinationrectangle="300,400,-1,-1" behavior="menuitem"></image>
+      </images>
+      <animations>
+        <animation animationid="LogoAnimation" destinationrectangle="100,300,-1,-1" behavior="moveable4way" movementkeys="a,d,w,s"></animation>
+      </animations>
+    </window>
+  </windows>
+</pluginconfig>

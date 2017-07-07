@@ -1,0 +1,14 @@
+﻿<plugin name="NGPerformanceMonitor">
+  <versioninfo major="1" minor="2" build="23" release="true" expirimental="false" builddate="6/25/2017">
+    <compatibilityhistory>
+      <history>
+        <build major="1" minor="1" build="19" compatibility="A"></build>
+      </history>
+    </compatibilityhistory>
+    <authors>
+      <author>Mark Alicz</author>
+      <author>Joe Schmoe</author>
+    </authors>
+    <description>Performance Monitor Is the Plugin Comment</description>
+  </versioninfo>
+</plugin>

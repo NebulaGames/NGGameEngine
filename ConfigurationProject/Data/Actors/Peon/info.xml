@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<actorset>
+  <id>a3230b9c-700b-4a5e-9b7b-71sddbcfc2a2</id>
+  <name>MiscEnemies</name>
+  <displayname>Misc Enimies</displayname>
+  <description>Contains a Walking Peon</description>
+  <author>Mark Alicz</author>
+  <date>5/21/2015</date>
+  <actors>
+    <actor>
+      <id>n3230b9c-700b-4a5e-9b7b-71sddbcfc2a5</id>
+      <name>Peon</name>
+      <displayname>Peon 32x</displayname>
+      <description>32 Pixel Peon</description>
+      <author>Mark Alicz</author>
+      <date>5/21/2015</date>
+      <defaultframedelay>200</defaultframedelay>
+      <animations>
+        <animation>
+          <name>Standing</name>
+          <filename>Peon.png</filename>
+          <direction>Main</direction>
+          <frames>
+            <frame imagerec="13,2,32,32" anchor="" id="1" nextid="2" delay="4000"></frame>
+            <frame imagerec="68,0,28,34" id="2" nextid="3" delay="4000"></frame>
+            <frame imagerec="122,0,18,34" id="3" nextid="4" delay="4000"></frame>
+            <frame imagerec="164,1,23,30" id="4" nextid="5" delay="4000"></frame>
+            <frame imagerec="209,6,30,25" id="5" nextid="6" delay="4000"></frame>
+            <frame imagerec="164,1,23,30" id="6" nextid="7" delay="4000"></frame>
+            <frame imagerec="122,0,18,34" id="7" nextid="8" delay="4000"></frame>
+            <frame imagerec="68,0,28,34" id="8" nextid="1" delay="4000" fliphorizontal="true"></frame>
+          </frames>
+        </animation>
+        <animation>
+          <name>Walking</name>
+          <filename>Peon.png</filename>
+          <direction>Top</direction>
+          <frames>
+            <frame imagerec="12,2,32,34" id="1" nextid="2" delay="100"></frame>
+            <frame imagerec="12,40,32,34" id="2" nextid="3" delay="100"></frame>
+            <frame imagerec="12,81,32,34" id="3" nextid="4" delay="100"></frame>
+            <frame imagerec="12,122,32,34" id="4" nextid="5" delay="100"></frame>
+            <frame imagerec="12,164,32,34" id="5" nextid="1" delay="100"></frame>
+          </frames>
+        </animation>
+        <animation>
+          <name>Walking</name>
+          <filename>Peon.png</filename>
+          <direction>Right</direction>
+          <frames>
+            <frame imagerec="117,0,30,34" id="1" nextid="2" delay="100"></frame>
+            <frame imagerec="117,40,30,34" id="2" nextid="3" delay="100"></frame>
+            <frame imagerec="117,81,30,34" id="3" nextid="4" delay="100"></frame>
+            <frame imagerec="117,120,30,34" id="4" nextid="5" delay="100"></frame>
+            <frame imagerec="117,163,30,34" id="5" nextid="1" delay="100"></frame>
+          </frames>
+        </animation>
+      </animations>
+    </actor>
+  </actors>
+</actorset>

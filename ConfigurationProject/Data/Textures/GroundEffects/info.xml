@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<texturefile>
+  <id>b3240b9c-d00b-4a3e-9b7b-716e1bcfc2a5</id>
+  <name>Basic Ground Effects</name>
+  <author>Mark Alicz</author>
+  <description>Basic Included Textures</description>
+  <date>10/3/2014</date>
+  <textures>
+    <texture>
+      <id>cdecd4ab-526b-4898-9873-0577f6e6ee54</id>
+      <name>GreenBasic</name>
+      <filename>ground0001.jpg</filename>
+      <description>Basic Green Texture</description>
+      <displayname>Green Basic</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup></animationgroup>
+      <animationdisplaytime>0</animationdisplaytime>
+    </texture>
+    <texture>
+      <id>cf94428a-b770-48f9-b6c3-b0fbf9b6a0eb</id>
+      <name>CarpetConfetti</name>
+      <filename>ground0002.jpg</filename>
+      <description>Carpet Confetti</description>
+      <displayname>Carpet Confetti</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup></animationgroup>
+      <animationdisplaytime>0</animationdisplaytime>
+    </texture>
+    <texture>
+      <id>39c7b765-6da0-4936-89bc-5e1196a50409</id>
+      <name>Pebbles</name>
+      <filename>ground0003.jpg</filename>
+      <description>Pebbles</description>
+      <displayname>Pebbles</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup></animationgroup>
+      <animationdisplaytime>0</animationdisplaytime>
+    </texture>
+    <texture>
+      <id>a8cec93d-8332-453f-8baf-35b377710a1e</id>
+      <name>MossyCobblestoneGrass</name>
+      <filename>ground0004.jpg</filename>
+      <description>Mossy Cobblestone Grass</description>
+      <displayname>Mossy Cobblestone</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup></animationgroup>
+      <animationdisplaytime>0</animationdisplaytime>
+    </texture>
+    <texture>
+      <id>f757faa2-02b8-4d5c-be44-f2d96427822c</id>
+      <name>BasicGray</name>
+      <filename>ground0005.jpg</filename>
+      <description>Basic Gray</description>
+      <displayname>Basic Gray</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup></animationgroup>
+      <animationdisplaytime>0</animationdisplaytime>
+    </texture>
+    <texture>
+      <id>44617bd6-31c3-4b22-9a87-f43d3862f7e0</id>
+      <name>DirtyGravel</name>
+      <filename>ground0006.jpg</filename>
+      <description>Dirty Gravel</description>
+      <displayname>Dirty Gravel</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup></animationgroup>
+      <animationdisplaytime>0</animationdisplaytime>
+    </texture>
+    <texture>
+      <id>99205204-8378-4240-9e07-d1ad4db3e377</id>
+      <name>SparceDirt</name>
+      <filename>ground0007.jpg</filename>
+      <description>Sparce Dirt</description>
+      <displayname>Sparce Dirt</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup></animationgroup>
+      <animationdisplaytime>0</animationdisplaytime>
+    </texture>
+    <texture>
+      <id>1ef63d91-4638-4acd-837d-22ec95ee46d7</id>
+      <name>Sand</name>
+      <filename>ground0008.jpg</filename>
+      <description>Sand</description>
+      <displayname>Sand</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup></animationgroup>
+      <animationdisplaytime>0</animationdisplaytime>
+    </texture>
+    <texture>
+      <id>ea1714bf-4115-445b-aafa-6cc7bb72875f</id>
+      <name>Water</name>
+      <filename>ground0009.jpg</filename>
+      <description>Water</description>
+      <displayname>Water</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup></animationgroup>
+      <animationdisplaytime>0</animationdisplaytime>
+    </texture>
+    <texture>
+      <id>e9bf9ec7-b8fe-4b7a-bc89-401e121afe48</id>
+      <name>DeadPrarie</name>
+      <filename>ground0011.jpg</filename>
+      <description>Dead Prarie</description>
+      <displayname>Dead Prarie</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup></animationgroup>
+      <animationdisplaytime>0</animationdisplaytime>
+    </texture>
+    <texture>
+      <id>e1faa857-c978-4fef-849a-e0a9d66b75bc</id>
+      <name>MetalMesh</name>
+      <filename>ground0012.jpg</filename>
+      <description>Metal Mesh</description>
+      <displayname>Metal Mesh</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup></animationgroup>
+      <animationdisplaytime>0</animationdisplaytime>
+    </texture>
+    <texture>
+      <id>eed89689-b97d-4a09-bbdb-93e79ff32c93</id>
+      <name>GreatGrass</name>
+      <filename>ground0013.jpg</filename>
+      <description>Great Grass</description>
+      <displayname>Great Grass</displayname>
+      <animationseq>0</animationseq>
+      <animationgroup></animationgroup>
+      <animationdisplaytime>0</animationdisplaytime>
+    </texture>
+  </textures>
+</texturefile>

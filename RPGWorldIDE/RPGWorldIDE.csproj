@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F63CD560-7A7B-46E4-AF02-C5F64F643489}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NebulaGames.RPGWorld.IDE</RootNamespace>
+    <AssemblyName>RPGWorldIDE</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ACT.Core">
+      <HintPath>D:\ACT\Binarys\ACT.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Docking.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Themes.DXStyle.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=2.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\GamersGatherOnline\Generic Game Engine\NG_GameProjectManager\NG_SpriteBuilder\SpriteBuilder\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.6.0.1625, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Net, Version=3.6.0.1625, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\ACT\Binarys\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimationManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimationManager.Designer.cs">
+      <DependentUpon>AnimationManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaSelector.designer.cs">
+      <DependentUpon>AreaSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManager\ActorManager\ActorAnimation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataManager\ActorManager\ActorAnimation.Designer.cs">
+      <DependentUpon>ActorAnimation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManager\ActorManager\ActorManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataManager\ActorManager\ActorManager.Designer.cs">
+      <DependentUpon>ActorManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManager\ImageManager\ImageManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataManager\ImageManager\ImageManager.Designer.cs">
+      <DependentUpon>ImageManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManager\ImageManager\ImageProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataManager\ImageManager\ImageProperties.Designer.cs">
+      <DependentUpon>ImageProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManager\ImageManager\ImageViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataManager\ImageManager\ImageViewer.Designer.cs">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManager\ProjectTypeManager\ProjectTypeManager.cs" />
+    <Compile Include="Dialogs\LayerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\LayerInfo.Designer.cs">
+      <DependentUpon>LayerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\LoadProjectPage\LoadOrCreateProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialogs\LoadProjectPage\LoadOrCreateProject.Designer.cs">
+      <DependentUpon>LoadOrCreateProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\LoadProjectPage\LoadOrCreateProjectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\LoadProjectPage\LoadOrCreateProjectDialog.Designer.cs">
+      <DependentUpon>LoadOrCreateProjectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ProgressBarWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ProgressBarWindow.Designer.cs">
+      <DependentUpon>ProgressBarWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputBox.cs" />
+    <Compile Include="MainIDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainIDE.designer.cs">
+      <DependentUpon>MainIDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapObject_Properties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapObject_Properties.designer.cs">
+      <DependentUpon>MapObject_Properties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressWindow.designer.cs">
+      <DependentUpon>ProgressWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectSettings.designer.cs">
+      <DependentUpon>ProjectSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resource_En.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource_En.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SpriteDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpriteDefinition.designer.cs">
+      <DependentUpon>SpriteDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestWorldGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestWorldGenerator.designer.cs">
+      <DependentUpon>TestWorldGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorldProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorldProperties.designer.cs">
+      <DependentUpon>WorldProperties.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnimationManager.resx">
+      <DependentUpon>AnimationManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AreaSelector.resx">
+      <DependentUpon>AreaSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManager\ActorManager\ActorAnimation.resx">
+      <DependentUpon>ActorAnimation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManager\ActorManager\ActorManager.resx">
+      <DependentUpon>ActorManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManager\ImageManager\ImageManager.resx">
+      <DependentUpon>ImageManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManager\ImageManager\ImageProperties.resx">
+      <DependentUpon>ImageProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManager\ImageManager\ImageViewer.resx">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\LayerInfo.resx">
+      <DependentUpon>LayerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\LoadProjectPage\LoadOrCreateProject.resx">
+      <DependentUpon>LoadOrCreateProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\LoadProjectPage\LoadOrCreateProjectDialog.resx">
+      <DependentUpon>LoadOrCreateProjectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ProgressBarWindow.resx">
+      <DependentUpon>ProgressBarWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainIDE.resx">
+      <DependentUpon>MainIDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapObject_Properties.resx">
+      <DependentUpon>MapObject_Properties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressWindow.resx">
+      <DependentUpon>ProgressWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectSettings.resx">
+      <DependentUpon>ProjectSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resource_En.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource_En.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpriteDefinition.resx">
+      <DependentUpon>SpriteDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestWorldGenerator.resx">
+      <DependentUpon>TestWorldGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorldProperties.resx">
+      <DependentUpon>WorldProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RPGWorldEngineDLL\RPGWorldEngineDLL.csproj">
+      <Project>{60e9f617-54f2-402b-9f84-50de1939f3ad}</Project>
+      <Name>RPGWorldEngineDLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ArrowDown.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ArrowLeft.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ArrowRight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ArrowUp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\cancel_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\TransparentSquare1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\SquareIcon1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\SaveIcon_With_Arrow1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\saveall_32x321.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\saveall_16x161.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Properties_Icon_With_Finder1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\PaintBrushIconActive1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\PaintBrushIcon1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\pagesetup_32x321.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\new_32x3211.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\new_16x161.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\moveup_32x321.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\movedown_32x321.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\LoadIcon_OpenFolder_Blue1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\loadfrom_32x321.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\loadfrom_16x161.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\fillbackground_32x321.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\feature_32x321.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Export_Icon_Large_To_Small1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\ControlBackground1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\CircleIcon1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\cancel_32x321.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resources\CircleIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ControlBackground.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Export_Icon_Large_To_Small.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\feature_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\fillbackground_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\loadfrom_16x16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\loadfrom_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\LoadIcon_OpenFolder_Blue.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\movedown_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\moveup_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\new_16x16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\new_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\new_32x321.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\pagesetup_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\PaintBrush.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\PaintBrushIcon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\PaintBrushIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\PaintBrushIconActive.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Properties_Icon_With_Finder.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\saveall_16x16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\saveall_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\SaveIcon_With_Arrow.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\SquareIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\TransparentSquare.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
